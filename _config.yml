@@ -1,11 +1,16 @@
 title: "Laurie - Services à domicile"
 description: "Services à domicile à Cholet"
+
 url: "https://laurie-services.github.io"
 baseurl: ""
+
+lang: "fr"
+timezone: "Europe/Paris"
 
 markdown: kramdown
 permalink: /:basename.html
 
 plugins: []
 
+# Flag utilisé pour afficher un message de pré-lancement dans le layout
 prelaunch: true
