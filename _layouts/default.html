@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
-    {% if site.prelaunch != true %}
+
+    <!-- Umami analytics (actif même en pré-lancement) -->
     <script defer src="https://cloud.umami.is/script.js" data-website-id="578df007-df4d-4da7-b075-dc6f5385372b"></script>
-    {% endif %}
   </head>
+
   <body>
     <header class="site-header">
       <div class="container">
