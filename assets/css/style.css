@@ -1,14 +1,14 @@
 :root {
-  --bg: #f2efe9;
-  --surface: #ffffff;
+  --bg: #f4f1ec;          /* fond global plus doux */
+  --surface: #ffffff;     /* cartes restent blanches */
   --text: #222222;
   --muted: #666666;
-  --border: #e6dfd4;
+  --border: #ddd6c8;      /* un peu plus visible */
   --accent: #4a90e2;
   --accent-strong: #1e4e8b;
   --max-width: 960px;
   --radius: 14px;
-  --shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  --shadow: 0 10px 28px rgba(0, 0, 0, 0.08); /* ombre légèrement renforcée */
 }
 
 *,
