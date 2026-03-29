@@ -1,0 +1,11 @@
+title: "Laurie - Services à domicile"
+description: "Services à domicile à Cholet"
+url: "https://laurie-services.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /:basename.html
+
+plugins: []
+
+prelaunch: true

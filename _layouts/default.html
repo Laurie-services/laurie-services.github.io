@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container">
+        <a class="site-title" href="{{ '/' | relative_url }}">
+          <img src="{{ '/images/logo.png' | relative_url }}" alt="Laurie - Services à domicile" class="logo">
+        </a>
+        <nav class="site-nav" aria-label="Navigation principale">
+          <a href="{{ '/' | relative_url }}">Accueil</a>
+          <a href="{{ '/services.html' | relative_url }}">Services et tarifs</a>
+          <a href="{{ '/credit-impot.html' | relative_url }}">Crédit d’impôt</a>
+          <a href="{{ '/zone-intervention.html' | relative_url }}">Zone d’intervention</a>
+          <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    {% if site.prelaunch %}
+    <div class="notice offer-highlight" style="margin: 0;">
+      <div class="container">
+        <p style="margin: 0;">
+          <strong>Ouverture prévue à partir du 15 mai.</strong>
+          Vous pouvez déjà me contacter pour préparer une première intervention.
+        </p>
+      </div>
+    </div>
+    {% endif %}
+
+    <main class="site-main">
+      <div class="container">
+        {{ content }}
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          Laurie - Services à domicile • Cholet •
+          <a href="{{ '/mentions-legales.html' | relative_url }}">Mentions légales</a> Site sans cookies • Statistiques anonymes
+        </p>
+	
+      </div>
+    </footer>
+  </body>
+</html>
