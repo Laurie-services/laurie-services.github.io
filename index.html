@@ -16,7 +16,9 @@ description: "Services à domicile à Cholet : aide du quotidien, petit jardinag
     <div class="hero-points">
       <span>📍 Cholet centre</span>
       <span>🚶 Déplacements à pied</span>
+      {% if site.sap_validated %}
       <span>🧾 Crédit d’impôt possible</span>
+      {% endif %}
     </div>
 
     <div class="cta-row">
@@ -40,10 +42,12 @@ description: "Services à domicile à Cholet : aide du quotidien, petit jardinag
   <p class="offer-price">
     Soit <strong>22 € / heure</strong> au lieu de <strong>27 € à 30 € / heure</strong>
   </p>
-  
+
+  {% if site.sap_validated %}
   <p class="offer-price-secondary">
     Environ <strong>11 € / heure après crédit d’impôt</strong>, selon votre situation.
   </p>
+  {% endif %}
 
   <p>
     Ces heures peuvent être utilisées librement sur les différents services proposés,

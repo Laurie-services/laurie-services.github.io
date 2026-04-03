@@ -11,6 +11,14 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
   </p>
 </section>
 
+{% if site.sap_validated %}
+<section class="notice">
+  <p>
+    Ces prestations sont éligibles au crédit d’impôt de 50 % dans les conditions prévues par la réglementation.
+  </p>
+</section>
+{% endif %}
+
 <section class="notice">
   <p>
     Les prestations sont réalisées avec le matériel, les outils, les produits et les ingrédients fournis par le client.
@@ -25,11 +33,11 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
     <ul class="clean-list">
       <li>Ménage courant</li>
       <li>Vaisselle</li>
-      <li>Aide dans les tâches du quotidien</li>
+      <li>Rangement simple</li>
     </ul>
     <p><strong>27 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#aide-pratique' | relative_url }}" target="_blank" rel="noopener noreferrer">Ma façon de travailler</a>
+      <a href="{{ '/a-propos.html#aide-pratique' | relative_url }}">Ma façon de travailler</a>
     </p>
   </article>
 
@@ -40,10 +48,13 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
       <li>Désherbage</li>
       <li>Entretien simple du jardin</li>
     </ul>
-    <p>Prestations limitées à du petit jardinage, sans gros travaux.</p>
+    <p>
+      Prestations limitées à du petit jardinage : pas de gros travaux, pas d’élagage,
+      pas de taille d’arbres et pas d’outillage motorisé lourd.
+    </p>
     <p><strong>27 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#jardinage' | relative_url }}" target="_blank" rel="noopener noreferrer">Mon parcours en jardinage</a>
+      <a href="{{ '/a-propos.html#jardinage' | relative_url }}">Mon parcours en jardinage</a>
     </p>
   </article>
 
@@ -57,19 +68,19 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
     </ul>
     <p><strong>27 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#accompagnement' | relative_url }}" target="_blank" rel="noopener noreferrer">Mon expérience dans l’accompagnement</a>
+      <a href="{{ '/a-propos.html#accompagnement' | relative_url }}">Mon expérience dans l’accompagnement</a>
     </p>
   </article>
 
   <article class="card">
     <h2>🛒 Courses de proximité</h2>
     <ul class="clean-list">
-      <li>Aide aux courses</li>
       <li>Courses de proximité</li>
+      <li>Livraison de courses</li>
     </ul>
     <p><strong>27 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#organisation' | relative_url }}" target="_blank" rel="noopener noreferrer">Mon sens pratique</a>
+      <a href="{{ '/a-propos.html#organisation' | relative_url }}">Mon sens pratique</a>
     </p>
   </article>
 
@@ -77,10 +88,11 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
     <h2>🍳 Préparation des repas</h2>
     <ul class="clean-list">
       <li>Cuisine à domicile</li>
+      <li>Préparation simple avec le matériel du client</li>
     </ul>
     <p><strong>30 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#cuisine' | relative_url }}" target="_blank" rel="noopener noreferrer">Ma spécialité : cuisine low carb</a>
+      <a href="{{ '/a-propos.html#cuisine' | relative_url }}">Ma spécialité : cuisine low carb</a>
     </p>
   </article>
 
@@ -88,11 +100,12 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
     <h2>💻 Assistance informatique</h2>
     <ul class="clean-list">
       <li>Installation simple</li>
-      <li>Aide pour internet, mail et démarches courantes</li>
+      <li>Aide à l’utilisation d’internet et du mail</li>
+      <li>Accompagnement sur des démarches courantes</li>
     </ul>
     <p><strong>30 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#informatique' | relative_url }}" target="_blank" rel="noopener noreferrer">Ma formation en informatique</a>
+      <a href="{{ '/a-propos.html#informatique' | relative_url }}">Ma formation en informatique</a>
     </p>
   </article>
 
@@ -105,7 +118,7 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
     </ul>
     <p><strong>30 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#administratif' | relative_url }}" target="_blank" rel="noopener noreferrer">Mon sens de l’organisation</a>
+      <a href="{{ '/a-propos.html#administratif' | relative_url }}">Mon sens de l’organisation</a>
     </p>
   </article>
 
@@ -118,7 +131,7 @@ description: "Services à domicile à Cholet avec tarifs détaillés."
     </ul>
     <p><strong>30 € / heure</strong></p>
     <p>
-      <a href="{{ '/a-propos.html#soutien-scolaire' | relative_url }}" target="_blank" rel="noopener noreferrer">Mon expérience avec les enfants</a>
+      <a href="{{ '/a-propos.html#soutien-scolaire' | relative_url }}">Mon expérience avec les enfants</a>
     </p>
   </article>
 
