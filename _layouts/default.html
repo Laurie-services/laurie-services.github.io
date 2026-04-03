@@ -53,7 +53,20 @@
     </div>
     {% endif %}
 
-    {% unless site.sap_validated %}
+    {% if site.sap_validated %}
+    <div class="notice" style="margin: 0;">
+      <div class="container" style="display: flex; align-items: center; gap: 10px;">
+        <img
+          src="{{ '/images/sap.jpg' | relative_url }}"
+          alt="Services à la personne"
+          style="height: 40px;"
+        >
+        <p style="margin: 0;">
+          Organisme de services à la personne déclaré.
+        </p>
+      </div>
+    </div>
+    {% else %}
     <div class="notice" style="margin: 0;">
       <div class="container">
         <p style="margin: 0;">
@@ -62,7 +75,7 @@
         </p>
       </div>
     </div>
-    {% endunless %}
+    {% endif %}
 
     <main class="site-main">
       <div class="container">

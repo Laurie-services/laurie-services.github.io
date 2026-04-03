@@ -14,4 +14,4 @@ plugins: []
 
 # Flag utilisé pour afficher un message de pré-lancement dans le layout
 prelaunch: true
-sap_validated: false
+sap_validated: true
