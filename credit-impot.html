@@ -6,12 +6,30 @@ description: "Informations générales sur l’avantage fiscal lié à certains 
 
 <section class="hero">
   <h1>Crédit d’impôt</h1>
+
+  {% if site.sap_validated %}
   <p>
-    Toutes les prestations que je propose sont éligibles au crédit d’impôt, sous réserve des conditions fiscales applicables.
-    En tant que services à la personne (SAP), elles ouvrent droit à un crédit d’impôt égal à <strong>50 % des sommes engagées</strong> dans les limites et conditions prévues par les textes applicables.
+    Les prestations que je propose sont éligibles au crédit d’impôt dans le cadre des services à la personne (SAP),
+    conformément à la réglementation en vigueur.
+    Elles ouvrent droit à un crédit d’impôt égal à <strong>50 % des sommes engagées</strong>,
+    dans les limites et conditions prévues par les textes applicables.
   </p>
+  {% else %}
   <p>
-    Par exemple, une prestation facturée <strong>100€</strong> vous permet de récupérer jusqu’à <strong>50€</strong> sous forme de crédit d’impôt, si toutes les conditions sont remplies.
+    Les prestations proposées ont vocation à être éligibles au crédit d’impôt dans le cadre des services à la personne (SAP),
+    sous réserve de validation de la déclaration en cours auprès des autorités compétentes
+    et des conditions fiscales applicables.
+  </p>
+
+  <p>
+    <strong>Déclaration services à la personne en cours.</strong><br>
+    Le crédit d’impôt ne sera applicable qu’après validation officielle.
+  </p>
+  {% endif %}
+
+  <p>
+    Par exemple, une prestation facturée <strong>100€</strong> vous permet de récupérer jusqu’à <strong>50€</strong>
+    sous forme de crédit d’impôt, si toutes les conditions sont remplies.
   </p>
 </section>
 
@@ -27,7 +45,8 @@ description: "Informations générales sur l’avantage fiscal lié à certains 
   </p>
 
   <p>
-    Si besoin, je peux vous aider à déclarer les prestations dans votre déclaration de revenus, dans le cadre d’une aide administrative simple.
+    Si besoin, je peux vous aider à déclarer les prestations dans votre déclaration de revenus,
+    dans le cadre d’une aide administrative simple.
   </p>
 
   <p>
