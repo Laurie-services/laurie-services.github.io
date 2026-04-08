@@ -13,5 +13,14 @@ permalink: /:basename.html
 plugins: []
 
 # Flag utilisé pour afficher un message de pré-lancement dans le layout
-prelaunch: false
+prelaunch: true
+
+# Enregistrement SAP validé
 sap_validated: false
+
+# Médiateur de la consommation désigné
+mediator_enabled: false
+
+# L'avance immédiate est active
+avance_immediate_active: false
+

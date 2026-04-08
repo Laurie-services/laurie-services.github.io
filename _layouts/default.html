@@ -12,13 +12,20 @@
       {% endif %}
     </title>
 
-    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}Services de proximité à Cholet centre : aide du quotidien, jardinage simple, assistance administrative et informatique.{% endif %}">
+    <meta
+      name="description"
+      content="{% if page.description %}{{ page.description }}{% else %}Services de proximité à Cholet centre : aide du quotidien, jardinage simple, assistance administrative et informatique.{% endif %}"
+    >
 
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="icon" href="{{ '/images/favicon.svg' | relative_url }}" type="image/svg+xml">
 
     <!-- Umami analytics -->
-    <script defer src="https://cloud.umami.is/script.js" data-website-id="578df007-df4d-4da7-b075-dc6f5385372b"></script>
+    <script
+      defer
+      src="https://cloud.umami.is/script.js"
+      data-website-id="578df007-df4d-4da7-b075-dc6f5385372b"
+    ></script>
   </head>
 
   <body>
@@ -43,38 +50,46 @@
     </header>
 
     {% if site.prelaunch %}
-    <div class="notice offer-highlight" style="margin: 0;">
-      <div class="container">
-        <p style="margin: 0;">
-          <strong>Ouverture prévue à partir du 2 mai.</strong>
-          Vous pouvez déjà me contacter pour préparer une première intervention.
-        </p>
+      <div class="notice offer-highlight" style="margin: 0;">
+        <div class="container">
+          <p style="margin: 0;">
+            <strong>Ouverture prévue à partir du 2 mai.</strong>
+            Vous pouvez déjà me contacter pour préparer une première intervention.
+          </p>
+        </div>
       </div>
-    </div>
     {% endif %}
 
     {% if site.sap_validated %}
-    <div class="notice" style="margin: 0;">
-      <div class="container" style="display: flex; align-items: center; gap: 10px;">
-        <img
-          src="{{ '/images/sap.jpg' | relative_url }}"
-          alt="Services à la personne"
-          style="height: 80px;"
-        >
-        <p style="margin: 0;">
-          Organisme de services à la personne déclaré.
-        </p>
+      <div class="notice" style="margin: 0;">
+        <div class="container" style="display: flex; align-items: center; gap: 10px;">
+          <img
+            src="{{ '/images/sap.jpg' | relative_url }}"
+            alt="Services à la personne"
+            style="height: 80px;"
+          >
+
+          <p style="margin: 0;">
+            <strong>Organisme de services à la personne déclaré.</strong>
+            {% if site.avance_immediate_active %}
+              <br>
+              Avance immédiate du crédit d’impôt disponible.
+            {% else %}
+              <br>
+              Le crédit d’impôt classique peut s’appliquer selon les conditions en vigueur.
+            {% endif %}
+          </p>
+        </div>
       </div>
-    </div>
     {% else %}
-    <div class="notice" style="margin: 0;">
-      <div class="container">
-        <p style="margin: 0;">
-          <strong>Déclaration services à la personne en cours.</strong>
-          Le crédit d’impôt ne sera applicable qu’après validation officielle.
-        </p>
+      <div class="notice" style="margin: 0;">
+        <div class="container">
+          <p style="margin: 0;">
+            <strong>Déclaration services à la personne en cours.</strong>
+            Le crédit d’impôt ne sera applicable qu’après validation officielle.
+          </p>
+        </div>
       </div>
-    </div>
     {% endif %}
 
     <main class="site-main">
@@ -86,9 +101,15 @@
     <footer class="site-footer">
       <div class="container">
         <p>
-          Laurie – Services de proximité à Cholet centre •
-          <a href="{{ '/mentions-legales.html' | relative_url }}">Mentions légales</a> •
+          <strong>Laurie – Services de proximité à Cholet centre</strong>
+        </p>
+        <p>
           <a href="{{ '/a-propos.html' | relative_url }}">À propos</a> •
+          <a href="{{ '/mentions-legales.html' | relative_url }}">Mentions légales</a> •
+          <a href="{{ '/cgv.html' | relative_url }}">CGV</a>
+        </p>
+
+        <p>
           Site sans cookies • Statistiques anonymes
         </p>
       </div>
