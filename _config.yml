@@ -13,7 +13,7 @@ permalink: /:basename.html
 plugins: []
 
 # Flag utilisé pour afficher un message de pré-lancement dans le layout
-prelaunch: true
+prelaunch: false
 
 # Enregistrement SAP validé
 sap_validated: false
