@@ -16,7 +16,7 @@ plugins: []
 prelaunch: false
 
 # Enregistrement SAP validé
-sap_validated: false
+sap_validated: true
 
 # Médiateur de la consommation désigné
 mediator_enabled: false
