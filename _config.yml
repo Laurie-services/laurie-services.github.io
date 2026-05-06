@@ -19,7 +19,7 @@ prelaunch: false
 sap_validated: true
 
 # Médiateur de la consommation désigné
-mediator_enabled: false
+mediator_enabled: true
 
 # L'avance immédiate est active
 avance_immediate_active: false
