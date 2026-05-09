@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Crédit d’impôt"
-description: "Informations générales sur l’avantage fiscal lié à certains services à domicile."
+description: "Informations sur le crédit d’impôt services à la personne et l’avance immédiate."
 ---
 
 <section class="hero">
@@ -9,31 +9,21 @@ description: "Informations générales sur l’avantage fiscal lié à certains 
 
   {% if site.sap_validated %}
     <p>
-      Les prestations proposées peuvent ouvrir droit à un crédit d’impôt dans le cadre des services à la personne,
-      conformément à la réglementation en vigueur et sous réserve que votre situation remplisse les conditions applicables.
+      Les prestations proposées peuvent ouvrir droit à un crédit d’impôt
+      dans le cadre des services à la personne,
+      conformément à la réglementation en vigueur
+      et sous réserve que votre situation remplisse les conditions applicables.
     </p>
 
     <p>
-      Cet avantage fiscal correspond à <strong>50&nbsp;% des sommes effectivement supportées</strong>,
+      Cet avantage fiscal correspond généralement à
+      <strong>50&nbsp;% des dépenses engagées</strong>,
       dans les limites prévues par la réglementation.
     </p>
-
-    {% if site.avance_immediate_active %}
-      <p>
-        <strong>Avance immédiate disponible :</strong>
-        si vous êtes éligible et que le service est activé, vous ne réglez que la part restant à votre charge,
-        soit généralement 50&nbsp;% du montant de la prestation.
-      </p>
-    {% else %}
-      <p>
-        <strong>Avance immédiate non disponible pour le moment :</strong>
-        l’avantage fiscal prend alors la forme du crédit d’impôt classique,
-        à faire valoir dans votre déclaration de revenus.
-      </p>
-    {% endif %}
   {% else %}
     <p>
-      Les prestations proposées ont vocation à être éligibles au crédit d’impôt dans le cadre des services à la personne,
+      Les prestations proposées ont vocation à être éligibles au crédit d’impôt
+      dans le cadre des services à la personne,
       sous réserve de validation officielle de la déclaration services à la personne
       et des conditions fiscales applicables à votre situation.
     </p>
@@ -46,45 +36,97 @@ description: "Informations générales sur l’avantage fiscal lié à certains 
 
   <p>
     Exemple : pour une prestation facturée <strong>100&nbsp;€</strong>,
-    le coût final peut revenir à <strong>50&nbsp;€</strong> après avantage fiscal,
-    si toutes les conditions sont remplies.
+    le coût final peut revenir à <strong>50&nbsp;€</strong>
+    après avantage fiscal, si toutes les conditions sont remplies.
   </p>
 </section>
 
 <section class="card">
-  <h2>Comment en bénéficier&nbsp;?</h2>
+  <h2>Crédit d’impôt classique</h2>
 
   {% if site.sap_validated %}
-    {% if site.avance_immediate_active %}
-      <p>
-        Si vous utilisez l’avance immédiate et que votre dossier est activé,
-        l’avantage fiscal est directement déduit du montant à payer.
-      </p>
+    <p>
+      Sans utilisation de l’avance immédiate,
+      vous réglez normalement les prestations,
+      puis vous déclarez les sommes concernées
+      dans votre déclaration annuelle de revenus.
+    </p>
 
-      <p>
-        Vous ne payez alors que la part restant à votre charge,
-        sous réserve d’acceptation du dispositif et des conditions fixées par l’Urssaf.
-      </p>
-    {% else %}
-      <p>
-        Vous conservez les factures des prestations réalisées,
-        puis vous déclarez les sommes concernées dans votre déclaration annuelle de revenus.
-      </p>
+    <p>
+      L’administration fiscale calcule ensuite le crédit d’impôt
+      selon les règles en vigueur.
+    </p>
 
-      <p>
-        L’administration fiscale calcule ensuite le crédit d’impôt selon les règles en vigueur.
-      </p>
-    {% endif %}
+    <p>
+      Le crédit d’impôt peut bénéficier également aux personnes non imposables,
+      sous réserve de remplir les conditions prévues par l’administration.
+    </p>
   {% else %}
     <p>
       Tant que la déclaration services à la personne n’est pas officiellement validée,
       les prestations ne peuvent pas encore ouvrir droit au crédit d’impôt.
     </p>
   {% endif %}
+</section>
+
+<section class="card">
+  <h2>Avance immédiate du crédit d’impôt</h2>
+
+  {% if site.sap_validated %}
+    <p>
+      L’avance immédiate est un dispositif distinct,
+      proposé par l’Urssaf et la Direction générale des Finances publiques.
+    </p>
+
+    <p>
+      Ce service permet, sous réserve d’éligibilité et d’activation,
+      de déduire immédiatement le crédit d’impôt du montant à payer,
+      sans attendre l’année suivante.
+    </p>
+
+    <p>
+      Dans ce cadre, le client ne règle généralement que
+      <strong>50&nbsp;% du montant de la prestation</strong>,
+      le reste étant pris en charge directement sous forme d’avance du crédit d’impôt.
+    </p>
+
+    <p>
+      L’utilisation de ce dispositif reste <strong>facultative</strong>.
+      Le crédit d’impôt classique reste possible sans avance immédiate.
+    </p>
+
+    <p>
+      Si vous souhaitez utiliser l’avance immédiate,
+      un compte devra être activé sur la plateforme dédiée de l’Urssaf.
+    </p>
+
+    <p>
+      Après activation du service,
+      les demandes de paiement sont transmises sur le compte Urssaf du client.
+      Le client dispose généralement d’un délai de <strong>48 heures</strong>
+      pour les valider ou les contester.
+    </p>
+
+    <p>
+      L’utilisation de l’avance immédiate reste soumise
+      aux conditions, contrôles et critères d’éligibilité
+      définis par l’Urssaf et l’administration fiscale.
+    </p>
+  {% else %}
+    <p>
+      L’avance immédiate du crédit d’impôt ne pourra être proposée
+      qu’après validation officielle de l’activité services à la personne.
+    </p>
+  {% endif %}
+</section>
+
+<section class="card">
+  <h2>Plafonds et informations complémentaires</h2>
 
   <p>
-    Le plafond général des dépenses ouvrant droit à l’avantage fiscal est en principe de
-    <strong>12&nbsp;000&nbsp;€ par an</strong>, avec certaines majorations possibles selon la situation du foyer.
+    Le plafond général des dépenses ouvrant droit à l’avantage fiscal
+    est en principe de <strong>12&nbsp;000&nbsp;€ par an</strong>,
+    avec certaines majorations possibles selon la situation du foyer.
   </p>
 
   <p>
@@ -97,8 +139,8 @@ description: "Informations générales sur l’avantage fiscal lié à certains 
   </ul>
 
   <p>
-    Le crédit d’impôt peut bénéficier également aux personnes non imposables,
-    sous réserve de remplir les conditions prévues par l’administration.
+    Laurie Services de proximité reste votre interlocutrice principale
+    pour l’organisation des prestations et le suivi administratif lié aux services réalisés.
   </p>
 
   <p>
