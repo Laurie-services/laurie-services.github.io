@@ -28,6 +28,48 @@ description: "Services à domicile à Cholet : aide du quotidien, petit jardinag
   </div>
 </section>
 
+<section class="section-intro">
+  <h2>Des services pensés pour le quotidien</h2>
+  <p>
+    L’objectif est simple : proposer une aide concrète, lisible et facile à organiser,
+    pour les tâches qui prennent du temps ou deviennent pénibles.
+  </p>
+</section>
+
+<section class="grid grid-2">
+  <article class="card feature-card">
+    <h2>🧹 Aide à domicile simple</h2>
+    <p>
+      Entretien courant du logement, rangement simple, vaisselle
+      et aide pratique pour garder un intérieur plus facile à gérer.
+    </p>
+  </article>
+
+  <article class="card feature-card">
+    <h2>🌿 Petit jardinage</h2>
+    <p>
+      Aide pour les petits travaux de jardinage autorisés dans le cadre des services à la personne,
+      selon le matériel disponible et la nature de la demande.
+    </p>
+  </article>
+
+  <article class="card feature-card">
+    <h2>💻 Assistance informatique</h2>
+    <p>
+      Aide simple à l’utilisation d’un ordinateur, d’un téléphone,
+      d’une messagerie ou de services en ligne du quotidien.
+    </p>
+  </article>
+
+  <article class="card feature-card">
+    <h2>🗂️ Assistance administrative</h2>
+    <p>
+      Aide à la lecture, au classement ou à la préparation de démarches administratives simples,
+      sans se substituer aux organismes compétents.
+    </p>
+  </article>
+</section>
+
 <section class="offer-highlight">
   <p class="offer-badge">Fonctionnement simple</p>
 
@@ -55,44 +97,35 @@ description: "Services à domicile à Cholet : aide du quotidien, petit jardinag
   </p>
 </section>
 
-<section class="section-intro">
-  <h2>Des services pensés pour le quotidien</h2>
+{% if site.sap_validated %}
+<section class="offer-highlight">
+  <p class="offer-badge">Avantage fiscal</p>
+
+  <h2>Crédit d’impôt et Avance immédiate</h2>
+
   <p>
-    L’objectif est simple : proposer une aide concrète, lisible et facile à organiser,
-    pour les tâches qui prennent du temps ou deviennent pénibles.
+    Les prestations peuvent ouvrir droit à un crédit d’impôt de 50&nbsp;%,
+    sous réserve que votre situation remplisse les conditions applicables.
+  </p>
+
+  <p>
+    L’Avance immédiate est un service optionnel et gratuit proposé par l’Urssaf.
+    Si le service est activé, vous ne réglez généralement que le reste à charge.
+  </p>
+
+  <figure style="margin: 1.5rem 0;">
+    <img
+      src="{{ '/images/Infographie-prestataire-version-simplifiee.webp' | relative_url }}"
+      alt="Avec l’Avance immédiate : validation de la demande de paiement, prélèvement du reste à charge, paiement du prestataire par l’Urssaf"
+      loading="lazy"
+      style="width: 100%; height: auto; border-radius: 0.5rem;"
+    >
+  </figure>
+
+  <p>
+    <a class="button secondary" href="{{ '/credit-impot.html' | relative_url }}">
+      Comprendre le crédit d’impôt et l’Avance immédiate
+    </a>
   </p>
 </section>
-
-<section class="grid grid-2">
-  <article class="card feature-card">
-    <h2>🤝 Une seule interlocutrice</h2>
-    <p>
-      Vous échangez directement avec moi, sans intermédiaire.
-      Cela permet une communication simple et un fonctionnement clair.
-    </p>
-  </article>
-
-  <article class="card feature-card">
-    <h2>📍 Interventions de proximité</h2>
-    <p>
-      Je me déplace à pied sur Cholet centre.
-      Cela permet de rester sur une zone cohérente, avec des interventions locales et faciles à organiser.
-    </p>
-  </article>
-
-  <article class="card feature-card">
-    <h2>🧹 Des prestations utiles</h2>
-    <p>
-      Ménage, jardinage simple, accompagnement, administratif ou informatique :
-      plusieurs besoins du quotidien peuvent être pris en charge.
-    </p>
-  </article>
-
-  <article class="card feature-card">
-    <h2>📞 Contact direct</h2>
-    <p>
-      Vous pouvez me contacter pour un besoin ponctuel, régulier,
-      ou simplement pour poser une question avant une première intervention.
-    </p>
-  </article>
-</section>
+{% endif %}
