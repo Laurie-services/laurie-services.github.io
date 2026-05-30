@@ -22,5 +22,5 @@ sap_validated: true
 mediator_enabled: true
 
 # L'avance immédiate est active
-avance_immediate_active: false
+avance_immediate_active: true
 
